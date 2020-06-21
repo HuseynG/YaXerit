@@ -5,12 +5,16 @@
 //  Created by Huseyn Gorbani on 20/06/2020.
 //  Copyright © 2020 Huseyn Gorbani. All rights reserved.
 //
-
+import MapKit
 import SwiftUI
 
-struct Map: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Map: UIViewRepresentable {
+    func makeUIView(context: UIViewRepresentableContext<Map>) -> MKMapView {
+        let mapView = MKMapView()
+        return mapView
+    }
+
+    func updateUIView(_ view: MKMapView, context: UIViewRepresentableContext<Map>) {
     }
 }
 
