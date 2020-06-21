@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8059127249F6B73007C876A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8869BFB249E01FB00883A36 /* Map.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C8C1A791249B87AD00B3704A = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +66,9 @@
 		C8C1A79C249B87AE00B3704A /* YaXerit */ = {
 			isa = PBXGroup;
 			children = (
+				C8059127249F6B73007C876A /* Views */,
 				C8C1A79D249B87AE00B3704A /* AppDelegate.swift */,
 				C8C1A79F249B87AE00B3704A /* SceneDelegate.swift */,
-				C8869BFB249E01FB00883A36 /* Map.swift */,
 				C8C1A7A1249B87AE00B3704A /* ContentView.swift */,
 				C8C1A7A3249B87B200B3704A /* Assets.xcassets */,
 				C8C1A7A8249B87B200B3704A /* LaunchScreen.storyboard */,

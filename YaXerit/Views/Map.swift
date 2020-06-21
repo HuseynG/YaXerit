@@ -7,10 +7,13 @@
 //
 import MapKit
 import SwiftUI
+// CoreLocation
 
 struct Map: UIViewRepresentable {
     func makeUIView(context: UIViewRepresentableContext<Map>) -> MKMapView {
         let mapView = MKMapView()
+        
+        //
         return mapView
     }
 
