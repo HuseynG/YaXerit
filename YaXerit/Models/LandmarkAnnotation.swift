@@ -1,0 +1,21 @@
+//
+//  LandmarkAnnotation.swift
+//  YaXerit
+//
+//  Created by Huseyn Gorbani on 23/06/2020.
+//  Copyright © 2020 Huseyn Gorbani. All rights reserved.
+//
+
+import MapKit
+import UIKit
+
+
+final class LandmarkAnnotation: NSObject, MKAnnotation {
+    let title: String?
+    let coordinate: CLLocationCoordinate2D
+
+    init(landmark: Landmark) {
+        self.title = landmark.name
+        self.coordinate = landmark.coordinate
+    }
+}
