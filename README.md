@@ -4,7 +4,7 @@ App dan ancaq Azpetrolu seçirsən və sənə ən yaxın olanini göstərir, ne�
 
 
 App re-development:
-  Project's progress will be tracked with Gantt chart.
-  Google Maps sdk is used
-  SwiftUI
-  FireBase will be used for this project.
+  - Project's progress will be tracked with Gantt chart.
+  - Google Maps sdk is used
+  - SwiftUI
+  - FireBase will be used for this project.
