@@ -10,9 +10,17 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-    
+//    @State var Name: String = ""
+//    @State var Pass: String = ""
     var body: some View {
-        Text("hello")
+
+        ZStack {
+//            MapView().edgesIgnoringSafeArea(.all)
+//            PlacesList()
+            GoogleMapView().edgesIgnoringSafeArea(.all)
+
+        }
+        
     }
 }
 

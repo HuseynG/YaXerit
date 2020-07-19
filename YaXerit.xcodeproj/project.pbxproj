@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136103860B91D4808C1335AB /* Pods_YaXerit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */; };
+		C8AC3D7C24C46C2F00457994 /* LocationManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */; };
 		C8C1A79E249B87AE00B3704A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A79D249B87AE00B3704A /* AppDelegate.swift */; };
 		C8C1A7A0249B87AE00B3704A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A79F249B87AE00B3704A /* SceneDelegate.swift */; };
 		C8C1A7A2249B87AE00B3704A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A7A1249B87AE00B3704A /* ContentView.swift */; };
 		C8C1A7A4249B87B200B3704A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C1A7A3249B87B200B3704A /* Assets.xcassets */; };
 		C8C1A7A7249B87B200B3704A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C1A7A6249B87B200B3704A /* Preview Assets.xcassets */; };
 		C8C1A7AA249B87B200B3704A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C1A7A8249B87B200B3704A /* LaunchScreen.storyboard */; };
+		C8DF71CC24BE084400E0F006 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DF71CB24BE084400E0F006 /* ListView.swift */; };
+		C8EF835E24BF128B00522F3C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF835D24BF128B00522F3C /* MapView.swift */; };
+		C8EF836224BF462900522F3C /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF836124BF462900522F3C /* GoogleMapView.swift */; };
+		C8EF836424BF787900522F3C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF836324BF787900522F3C /* LocationManager.swift */; };
+		C8EF836624BF7D7800522F3C /* PlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF836524BF7D7800522F3C /* PlacesManager.swift */; };
+		C8EF836824BF7E5000522F3C /* PlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF836724BF7E5000522F3C /* PlacesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B92F0C6EDAC5CCE631B2E0 /* Pods-YaXerit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaXerit.debug.xcconfig"; path = "Target Support Files/Pods-YaXerit/Pods-YaXerit.debug.xcconfig"; sourceTree = "<group>"; };
+		1A16363667B91465BC095337 /* Pods-YaXerit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaXerit.release.xcconfig"; path = "Target Support Files/Pods-YaXerit/Pods-YaXerit.release.xcconfig"; sourceTree = "<group>"; };
+		7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YaXerit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager2.swift; sourceTree = "<group>"; };
 		C8C1A79A249B87AE00B3704A /* YaXerit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaXerit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C1A79D249B87AE00B3704A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8C1A79F249B87AE00B3704A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,12 @@
 		C8C1A7A6249B87B200B3704A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8C1A7A9249B87B200B3704A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8C1A7AB249B87B200B3704A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8DF71CB24BE084400E0F006 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C8EF835D24BF128B00522F3C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C8EF836124BF462900522F3C /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		C8EF836324BF787900522F3C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C8EF836524BF7D7800522F3C /* PlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesManager.swift; sourceTree = "<group>"; };
+		C8EF836724BF7E5000522F3C /* PlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136103860B91D4808C1335AB /* Pods_YaXerit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67593A71524F47E324EAF65A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05B92F0C6EDAC5CCE631B2E0 /* Pods-YaXerit.debug.xcconfig */,
+				1A16363667B91465BC095337 /* Pods-YaXerit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE626A809CD899CE3186D1ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8059127249F6B73007C876A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C8DF71CB24BE084400E0F006 /* ListView.swift */,
+				C8EF835D24BF128B00522F3C /* MapView.swift */,
+				C8EF836124BF462900522F3C /* GoogleMapView.swift */,
+				C8EF836724BF7E5000522F3C /* PlacesList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -47,6 +87,9 @@
 		C805FB0924A21E610080E00E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C8EF836324BF787900522F3C /* LocationManager.swift */,
+				C8EF836524BF7D7800522F3C /* PlacesManager.swift */,
+				C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -63,6 +106,8 @@
 			children = (
 				C8C1A79C249B87AE00B3704A /* YaXerit */,
 				C8C1A79B249B87AE00B3704A /* Products */,
+				67593A71524F47E324EAF65A /* Pods */,
+				BE626A809CD899CE3186D1ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8C1A7AE249B87B200B3704A /* Build configuration list for PBXNativeTarget "YaXerit" */;
 			buildPhases = (
+				DD919A881DC5B05CE9225616 /* [CP] Check Pods Manifest.lock */,
 				C8C1A796249B87AD00B3704A /* Sources */,
 				C8C1A797249B87AD00B3704A /* Frameworks */,
 				C8C1A798249B87AD00B3704A /* Resources */,
+				00721B6BE79CCE97448BBCFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,12 +212,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00721B6BE79CCE97448BBCFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD919A881DC5B05CE9225616 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YaXerit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8C1A796249B87AD00B3704A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8EF836224BF462900522F3C /* GoogleMapView.swift in Sources */,
+				C8EF836624BF7D7800522F3C /* PlacesManager.swift in Sources */,
+				C8DF71CC24BE084400E0F006 /* ListView.swift in Sources */,
 				C8C1A79E249B87AE00B3704A /* AppDelegate.swift in Sources */,
+				C8EF836824BF7E5000522F3C /* PlacesList.swift in Sources */,
+				C8EF836424BF787900522F3C /* LocationManager.swift in Sources */,
+				C8EF835E24BF128B00522F3C /* MapView.swift in Sources */,
+				C8AC3D7C24C46C2F00457994 /* LocationManager2.swift in Sources */,
 				C8C1A7A0249B87AE00B3704A /* SceneDelegate.swift in Sources */,
 				C8C1A7A2249B87AE00B3704A /* ContentView.swift in Sources */,
 			);
@@ -306,6 +402,7 @@
 		};
 		C8C1A7AF249B87B200B3704A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B92F0C6EDAC5CCE631B2E0 /* Pods-YaXerit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +423,7 @@
 		};
 		C8C1A7B0249B87B200B3704A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A16363667B91465BC095337 /* Pods-YaXerit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
