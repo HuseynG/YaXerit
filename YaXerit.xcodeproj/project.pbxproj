@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		136103860B91D4808C1335AB /* Pods_YaXerit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */; };
+		C812303124C9FE4C00F20FAB /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C812303024C9FE4C00F20FAB /* SessionStore.swift */; };
+		C8887ECE24C9B32D00D4A7B2 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8887ECD24C9B32D00D4A7B2 /* LoginPage.swift */; };
+		C8887ED024C9B34B00D4A7B2 /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8887ECF24C9B34B00D4A7B2 /* SignupPage.swift */; };
 		C8AC3D7C24C46C2F00457994 /* LocationManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */; };
+		C8AC3D8024C4A63100457994 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC3D7F24C4A63100457994 /* RouteManager.swift */; };
+		C8B54A4524CAE30B001F3F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8B54A4424CAE30B001F3F77 /* GoogleService-Info.plist */; };
+		C8B54A4824CB1040001F3F77 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B54A4724CB1040001F3F77 /* test.swift */; };
 		C8C1A79E249B87AE00B3704A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A79D249B87AE00B3704A /* AppDelegate.swift */; };
 		C8C1A7A0249B87AE00B3704A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A79F249B87AE00B3704A /* SceneDelegate.swift */; };
 		C8C1A7A2249B87AE00B3704A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A7A1249B87AE00B3704A /* ContentView.swift */; };
@@ -27,7 +33,13 @@
 		05B92F0C6EDAC5CCE631B2E0 /* Pods-YaXerit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaXerit.debug.xcconfig"; path = "Target Support Files/Pods-YaXerit/Pods-YaXerit.debug.xcconfig"; sourceTree = "<group>"; };
 		1A16363667B91465BC095337 /* Pods-YaXerit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaXerit.release.xcconfig"; path = "Target Support Files/Pods-YaXerit/Pods-YaXerit.release.xcconfig"; sourceTree = "<group>"; };
 		7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YaXerit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C812303024C9FE4C00F20FAB /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		C8887ECD24C9B32D00D4A7B2 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		C8887ECF24C9B34B00D4A7B2 /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager2.swift; sourceTree = "<group>"; };
+		C8AC3D7F24C4A63100457994 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		C8B54A4424CAE30B001F3F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8B54A4724CB1040001F3F77 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		C8C1A79A249B87AE00B3704A /* YaXerit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaXerit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C1A79D249B87AE00B3704A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8C1A79F249B87AE00B3704A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,10 +88,8 @@
 		C8059127249F6B73007C876A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C8DF71CB24BE084400E0F006 /* ListView.swift */,
-				C8EF835D24BF128B00522F3C /* MapView.swift */,
-				C8EF836124BF462900522F3C /* GoogleMapView.swift */,
-				C8EF836724BF7E5000522F3C /* PlacesList.swift */,
+				C8B54A4624CB1015001F3F77 /* AfterLogin */,
+				C8887ED324C9BD7A00D4A7B2 /* loginSignup */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,6 +100,7 @@
 				C8EF836324BF787900522F3C /* LocationManager.swift */,
 				C8EF836524BF7D7800522F3C /* PlacesManager.swift */,
 				C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */,
+				C8AC3D7F24C4A63100457994 /* RouteManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -99,6 +110,36 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C8887ED324C9BD7A00D4A7B2 /* loginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				C8887ECD24C9B32D00D4A7B2 /* LoginPage.swift */,
+				C8887ECF24C9B34B00D4A7B2 /* SignupPage.swift */,
+				C812303024C9FE4C00F20FAB /* SessionStore.swift */,
+			);
+			path = loginSignup;
+			sourceTree = "<group>";
+		};
+		C8887ED424C9BE8800D4A7B2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C8DF71CB24BE084400E0F006 /* ListView.swift */,
+				C8EF835D24BF128B00522F3C /* MapView.swift */,
+				C8EF836124BF462900522F3C /* GoogleMapView.swift */,
+				C8EF836724BF7E5000522F3C /* PlacesList.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C8B54A4624CB1015001F3F77 /* AfterLogin */ = {
+			isa = PBXGroup;
+			children = (
+				C8887ED424C9BE8800D4A7B2 /* Map */,
+				C8B54A4724CB1040001F3F77 /* test.swift */,
+			);
+			path = AfterLogin;
 			sourceTree = "<group>";
 		};
 		C8C1A791249B87AD00B3704A = {
@@ -131,6 +172,7 @@
 				C8C1A7A3249B87B200B3704A /* Assets.xcassets */,
 				C8C1A7A8249B87B200B3704A /* LaunchScreen.storyboard */,
 				C8C1A7AB249B87B200B3704A /* Info.plist */,
+				C8B54A4424CAE30B001F3F77 /* GoogleService-Info.plist */,
 				C8C1A7A5249B87B200B3704A /* Preview Content */,
 			);
 			path = YaXerit;
@@ -156,6 +198,7 @@
 				C8C1A797249B87AD00B3704A /* Frameworks */,
 				C8C1A798249B87AD00B3704A /* Resources */,
 				00721B6BE79CCE97448BBCFD /* [CP] Copy Pods Resources */,
+				6AB35DFA3FAF68E79596BACC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C1A7AA249B87B200B3704A /* LaunchScreen.storyboard in Resources */,
+				C8B54A4524CAE30B001F3F77 /* GoogleService-Info.plist in Resources */,
 				C8C1A7A7249B87B200B3704A /* Preview Assets.xcassets in Resources */,
 				C8C1A7A4249B87B200B3704A /* Assets.xcassets in Resources */,
 			);
@@ -228,6 +272,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB35DFA3FAF68E79596BACC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaXerit/Pods-YaXerit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD919A881DC5B05CE9225616 /* [CP] Check Pods Manifest.lock */ = {
@@ -262,13 +323,18 @@
 				C8EF836224BF462900522F3C /* GoogleMapView.swift in Sources */,
 				C8EF836624BF7D7800522F3C /* PlacesManager.swift in Sources */,
 				C8DF71CC24BE084400E0F006 /* ListView.swift in Sources */,
+				C8887ED024C9B34B00D4A7B2 /* SignupPage.swift in Sources */,
 				C8C1A79E249B87AE00B3704A /* AppDelegate.swift in Sources */,
+				C8B54A4824CB1040001F3F77 /* test.swift in Sources */,
+				C8887ECE24C9B32D00D4A7B2 /* LoginPage.swift in Sources */,
 				C8EF836824BF7E5000522F3C /* PlacesList.swift in Sources */,
 				C8EF836424BF787900522F3C /* LocationManager.swift in Sources */,
 				C8EF835E24BF128B00522F3C /* MapView.swift in Sources */,
 				C8AC3D7C24C46C2F00457994 /* LocationManager2.swift in Sources */,
+				C812303124C9FE4C00F20FAB /* SessionStore.swift in Sources */,
 				C8C1A7A0249B87AE00B3704A /* SceneDelegate.swift in Sources */,
 				C8C1A7A2249B87AE00B3704A /* ContentView.swift in Sources */,
+				C8AC3D8024C4A63100457994 /* RouteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

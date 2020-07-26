@@ -7,19 +7,40 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct ContentView: View {
-//    @State var Name: String = ""
-//    @State var Pass: String = ""
-    var body: some View {
-
-        ZStack {
-//            MapView().edgesIgnoringSafeArea(.all)
-//            PlacesList()
-            GoogleMapView().edgesIgnoringSafeArea(.all)
-
+    @EnvironmentObject var session: SessionStore
+    @State private var showEmailNeedsToBeVerifiedAlert = false
+    func getUser() {
+        session.listen()
+    }
+    func isUserVerified() -> Bool {
+        if session.checkUserEmailVerification() == true { //        if email is verified
+            return true
+        } else { //        else email is not verifed
+            return false
         }
+    }
+    func signOuDueToNotVerifiedAccount(){
+        print("signed out due to not verifed email")
+        session.signOut()
+    }
+    
+    
+    var body: some View {
+        NavigationView{
+            Group{
+                if (session.session != nil){
+    //                if email is verified
+                    if isUserVerified() == true {test(showAlert: false)}else{
+                        test(showAlert: true)
+                    }
+                }else {
+                    LoginPage()
+                }
+            }.onAppear(perform: getUser)
+        }
+        
         
     }
 }
