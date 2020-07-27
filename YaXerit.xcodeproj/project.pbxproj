@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		136103860B91D4808C1335AB /* Pods_YaXerit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */; };
 		C812303124C9FE4C00F20FAB /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C812303024C9FE4C00F20FAB /* SessionStore.swift */; };
+		C852061324CED31C00B4B1AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C852061224CED31C00B4B1AE /* GoogleService-Info.plist */; };
+		C852061624CEDAEE00B4B1AE /* LoginSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C852061524CEDAEE00B4B1AE /* LoginSignup.swift */; };
 		C8887ECE24C9B32D00D4A7B2 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8887ECD24C9B32D00D4A7B2 /* LoginPage.swift */; };
 		C8887ED024C9B34B00D4A7B2 /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8887ECF24C9B34B00D4A7B2 /* SignupPage.swift */; };
 		C8AC3D7C24C46C2F00457994 /* LocationManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */; };
 		C8AC3D8024C4A63100457994 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC3D7F24C4A63100457994 /* RouteManager.swift */; };
-		C8B54A4524CAE30B001F3F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8B54A4424CAE30B001F3F77 /* GoogleService-Info.plist */; };
 		C8B54A4824CB1040001F3F77 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B54A4724CB1040001F3F77 /* test.swift */; };
 		C8C1A79E249B87AE00B3704A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A79D249B87AE00B3704A /* AppDelegate.swift */; };
 		C8C1A7A0249B87AE00B3704A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A79F249B87AE00B3704A /* SceneDelegate.swift */; };
@@ -34,11 +35,12 @@
 		1A16363667B91465BC095337 /* Pods-YaXerit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaXerit.release.xcconfig"; path = "Target Support Files/Pods-YaXerit/Pods-YaXerit.release.xcconfig"; sourceTree = "<group>"; };
 		7582355F9CA1500408D93D81 /* Pods_YaXerit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YaXerit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C812303024C9FE4C00F20FAB /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		C852061224CED31C00B4B1AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C852061524CEDAEE00B4B1AE /* LoginSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignup.swift; sourceTree = "<group>"; };
 		C8887ECD24C9B32D00D4A7B2 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		C8887ECF24C9B34B00D4A7B2 /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		C8AC3D7B24C46C2F00457994 /* LocationManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager2.swift; sourceTree = "<group>"; };
 		C8AC3D7F24C4A63100457994 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
-		C8B54A4424CAE30B001F3F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8B54A4724CB1040001F3F77 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		C8C1A79A249B87AE00B3704A /* YaXerit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaXerit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C1A79D249B87AE00B3704A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		C852061424CEDAC100B4B1AE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C852061524CEDAEE00B4B1AE /* LoginSignup.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		C871DA6124A2696200DE1600 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +173,7 @@
 		C8C1A79C249B87AE00B3704A /* YaXerit */ = {
 			isa = PBXGroup;
 			children = (
+				C852061424CEDAC100B4B1AE /* Utilities */,
 				C871DA6124A2696200DE1600 /* Models */,
 				C805FB0924A21E610080E00E /* Managers */,
 				C8059127249F6B73007C876A /* Views */,
@@ -172,7 +183,7 @@
 				C8C1A7A3249B87B200B3704A /* Assets.xcassets */,
 				C8C1A7A8249B87B200B3704A /* LaunchScreen.storyboard */,
 				C8C1A7AB249B87B200B3704A /* Info.plist */,
-				C8B54A4424CAE30B001F3F77 /* GoogleService-Info.plist */,
+				C852061224CED31C00B4B1AE /* GoogleService-Info.plist */,
 				C8C1A7A5249B87B200B3704A /* Preview Content */,
 			);
 			path = YaXerit;
@@ -248,7 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C1A7AA249B87B200B3704A /* LaunchScreen.storyboard in Resources */,
-				C8B54A4524CAE30B001F3F77 /* GoogleService-Info.plist in Resources */,
+				C852061324CED31C00B4B1AE /* GoogleService-Info.plist in Resources */,
 				C8C1A7A7249B87B200B3704A /* Preview Assets.xcassets in Resources */,
 				C8C1A7A4249B87B200B3704A /* Assets.xcassets in Resources */,
 			);
@@ -331,6 +342,7 @@
 				C8EF836424BF787900522F3C /* LocationManager.swift in Sources */,
 				C8EF835E24BF128B00522F3C /* MapView.swift in Sources */,
 				C8AC3D7C24C46C2F00457994 /* LocationManager2.swift in Sources */,
+				C852061624CEDAEE00B4B1AE /* LoginSignup.swift in Sources */,
 				C812303124C9FE4C00F20FAB /* SessionStore.swift in Sources */,
 				C8C1A7A0249B87AE00B3704A /* SceneDelegate.swift in Sources */,
 				C8C1A7A2249B87AE00B3704A /* ContentView.swift in Sources */,

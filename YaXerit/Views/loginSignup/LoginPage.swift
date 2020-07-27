@@ -18,6 +18,7 @@ struct LoginPage: View {
 
     func isUserVerified() -> Bool {
         if session.checkUserEmailVerification() == true { //        if email is verified
+            print("yes verified")
             return true
         } else { //        else email is not verifed
             return false
@@ -35,11 +36,13 @@ struct LoginPage: View {
                     self.error = self.session.returnErrorCorrespondingMessageToLogin(of: errCode)
                     
                 }
+                print("blaaaaaaaaaaaaaaaaah \(self.error)")
                 return
             }else{
+                print("blaaaaaaaaaaaaaaaaah2 \(self.error)")
+                print("blaaaaaaaaaaaaaaaaah3 \(String(describing: result))")
                 self.email = ""
                 self.password = ""
-                
             }
         }
     }
@@ -61,6 +64,7 @@ struct LoginPage: View {
 //                    if verifed account
                     print(1)
                     self.signIn()
+                    print(111)
 
                 }){
                     Text("Log in")

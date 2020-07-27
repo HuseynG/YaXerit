@@ -13,6 +13,9 @@ struct test: View {
     func signOut(){
         session.signOut()
     }
+    func sendEmailVerification(){
+           session.SendVerificationEmail()
+    }
     var body: some View {
         VStack{
             NavigationLink(destination: LoginPage().navigationBarBackButtonHidden(true)
@@ -22,7 +25,9 @@ struct test: View {
             Text("Hello, there, welcome to main view!")
             Text("You have successfully loged in!")
             Button(action:{
+                
                 self.signOut()
+                
             }){
                 Text("Sign out")
             }
@@ -30,8 +35,9 @@ struct test: View {
             Alert(
                 title: Text("Verification needed!"),
                 message: Text("Please verify your email address. Your account is not verified."),
-                dismissButton: .default(Text("Okay"), action: {
-                    print("Okay tapped")
+                dismissButton: .default(Text("Send again"), action: {
+//                    print("Okay tapped")
+                    self.sendEmailVerification()
                     self.signOut()
                     self.showLoginView.toggle()
                 })

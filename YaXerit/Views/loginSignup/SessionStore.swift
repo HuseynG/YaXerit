@@ -29,6 +29,7 @@ class SessionStore: ObservableObject {
     
     func signUp(email: String, password: String, handler: @escaping AuthDataResultCallback) {
         Auth.auth().createUser(withEmail: email, password: password, completion: handler)
+        self.SendVerificationEmail()
     }
     
     func signIn(email: String, password: String, handler: @escaping AuthDataResultCallback) {
@@ -89,20 +90,41 @@ class SessionStore: ObservableObject {
                 return  "Something went wrong, please trying again."
         }
     }
-    func checkUserEmailVerification() -> Bool {
-        var isEmailVerified = false
-        guard let user = Auth.auth().currentUser else {
-            print("Did not work bruv")
-            return isEmailVerified
-        }
-        print("Passed the guard")
-        user.reload { (error) in
-            if user.isEmailVerified == true {
-                isEmailVerified = true
-            } else {
-                isEmailVerified = false
+    func SendVerificationEmail(){
+        print("SendVerificationEmail function is run")
+        Auth.auth().currentUser?.sendEmailVerification { (error) in
+            guard error != nil else {
+                print("User email verification sent")
+                return
             }
         }
+    }
+    func reloadUser(){
+        guard let user = Auth.auth().currentUser else {
+            print("Did not reload user")
+            return
+        }
+        user.reload { (error) in}
+        print("load the user")
+    }
+    
+    func checkUserEmailVerification() -> Bool {
+        var isEmailVerified: Bool
+        guard let user = Auth.auth().currentUser else {
+            print("Did not work bruv")
+            return false
+        }
+        print("Passed the guard")
+//        user.reload { (error) in
+            if user.isEmailVerified == true {
+                print("11111111Verifed")
+                isEmailVerified = true
+            } else { // false case
+                // send email
+                print("00000000Unverified")
+                isEmailVerified = false
+            }
+//        }
         return isEmailVerified
     }
     

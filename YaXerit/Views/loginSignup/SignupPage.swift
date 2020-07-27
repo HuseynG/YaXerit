@@ -33,6 +33,7 @@ struct SignupPage: View {
                 self.email = ""
                 self.name = ""
                 self.password = ""
+                self.session.SendVerificationEmail()
                 self.showEmailNeedsToBeVerifiedAlert = true
             }
         }
@@ -41,10 +42,11 @@ struct SignupPage: View {
     var body: some View {
         
         VStack{
-            NavigationLink(destination: LoginPage().navigationBarBackButtonHidden(true)
-            , isActive: $showLoginView){
-                EmptyView() // ofset it afterwards
-            }
+//            navigation link is problematic
+//            NavigationLink(destination: LoginPage().navigationBarBackButtonHidden(true)
+//            , isActive: $showLoginView){
+//                EmptyView().frame(width: 0, height: 0) // ofset it afterwards
+//            }
             // back to main screen, root
             
             // email
@@ -60,27 +62,27 @@ struct SignupPage: View {
             Button(action:{
                 self.signUp()
             }){
-                Text("Create an accont")
+                Text("Create an account")
             }.alert(isPresented: $showEmailNeedsToBeVerifiedAlert) { () -> Alert in
                 Alert(
                     title: Text("Verification needed!"),
                     message: Text("Congradulations, you have successfully registered. Please verify your email address before logging in."),
                     dismissButton: .default(Text("Okay"), action: {
                         print("Okay tapped")
-                        self.showLoginView.toggle()
+//                        self.showLoginView.toggle()
+                        self.session.signOut()
                     })
                 )
             }
-            
             // show error
             if (error != ""){
                 // get the type of error and, errormesage variable is changing accordingly eacch time
                 Text(error)
             }
-            
-
             Spacer()
-        }.padding()
+        }
+//        .padding().navigationBarTitle("")
+//        .navigationBarHidden(true)
         
         
     }

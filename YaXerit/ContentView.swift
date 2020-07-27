@@ -14,34 +14,35 @@ struct ContentView: View {
     func getUser() {
         session.listen()
     }
+    func reloadUserr(){
+        session.reloadUser()
+    }
     func isUserVerified() -> Bool {
+        self.reloadUserr()
         if session.checkUserEmailVerification() == true { //        if email is verified
+            print("yes verified, this message from content view")
             return true
         } else { //        else email is not verifed
+            print("From content view: isUserVerified returns \(session.checkUserEmailVerification())")
             return false
         }
     }
-    func signOuDueToNotVerifiedAccount(){
-        print("signed out due to not verifed email")
-        session.signOut()
-    }
-    
     
     var body: some View {
         NavigationView{
             Group{
                 if (session.session != nil){
-    //                if email is verified
+                    // reload user here
+                    
                     if isUserVerified() == true {test(showAlert: false)}else{
                         test(showAlert: true)
                     }
+                    //
                 }else {
                     LoginPage()
                 }
             }.onAppear(perform: getUser)
         }
-        
-        
     }
 }
 
